@@ -68,7 +68,7 @@ const LoginPage = () => {
                       <Input
                         {...field}
                         type="email"
-                        placeholder="xudoyberdiyeveldor@gmail.com"
+                        placeholder="kimdur@gmail.com"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>
@@ -99,7 +99,7 @@ const LoginPage = () => {
             </Form.Item>
             <button
               type="submit"
-              className="w-full py-[0.4rem] rounded-lg font-semibold bg-custom_blue text-white cursor-pointer transition-opacity hover:opacity-85"
+              className="w-full py-[0.4rem] rounded-lg font-semibold bg-custom_color hover:bg-custom_color_hover text-white cursor-pointer transition-opacity"
             >
               Kirish
             </button>
@@ -108,7 +108,7 @@ const LoginPage = () => {
         <p className="mt-10 text-center text-sm text-gray-500">
           <Link
             to={"/register"}
-            className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+            className="font-semibold leading-6 text-custom_color hover:text-custom_color_hover"
           >
             Akkauntingiz yo'qmi? Ro'yxatdan o'ting
           </Link>

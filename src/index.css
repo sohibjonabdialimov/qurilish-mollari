@@ -7,22 +7,31 @@
 }
 /* clip-path: polygon(51% 1%, 100% 0%, 100% 100%, 41% 99%, 0% 50%); */
 .bg_img1 {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home4.webp");
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.7)), url("./assets/q2.webp");
   background-size: 100% 650px;
   width: 100%;
+  height: 550px;
   background-repeat: no-repeat;
 }
 .bg_img2 {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home3.jpg");
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.7)), url("./assets/q3.webp");
   background-size: 100% 650px;
   width: 100%;
+  height: 550px;
   background-repeat: no-repeat;
 }
 .bg_img3 {
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)), url("./assets/home5.png");
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.7)), url("./assets/q4.jpg");
   background-size: 100% 650px;
   width: 100%;
+  height: 550px;
   background-repeat: no-repeat;
+}
+.hero_wrap{
+  background-color: rgb(0, 0, 0, 0.6);
+  margin-top: 50px;
+  border-radius: 50px;
+  margin-left: 50px;
 }
 .scrollToTop img {
   width: 45px;
@@ -45,6 +54,7 @@ a.active {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 80px;
+  color: #333;
 }
 .error_text {
   font-size: 14px;
@@ -945,6 +955,12 @@ a.active {
   }
 }
 @media (max-width: 600px) {
+  .hero_wrap{
+    background-color: rgb(0, 0, 0, 0.6);
+    margin-top: 50px;
+    border-radius: 50px;
+    margin-left: 0px;
+  }
   .order_sum {
     margin-bottom: 50px;
     margin-top: 20px;
@@ -983,20 +999,29 @@ a.active {
     font-size: 28px;
     margin-top: 30px;
     margin-bottom: 50px;
+    color: #333;
   }
   .design_wrapper {
     display: grid;
     margin-bottom: 100px;
     gap: 10px;
     grid-template-areas:
-      "d1 d2"
-      "d3 d4"
-      "d5 d6"
-      "d7 d8"
-      "d9 d10"
-      "d11 d12"
-      "d13 d14"
-      "d15 d16";
+      "d1"
+      "d2"
+      "d3"
+      "d4"
+      "d5"
+      "d6"
+      "d7"
+      "d8"
+      "d9"
+      "d10"
+      "d11"
+      "d12"
+      "d13"
+      "d14"
+      "d15"
+      "d16"
   }
   .design_wrapper img {
     height: 300px;

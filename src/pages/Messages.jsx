@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
 import Sidebar from "../components/sidebar/Sidebar";
-import Navbar from "../components/navbar/Navbar";
 import { axiosT } from "../services/api/axios";
 const Messages = () => {
   const [data, setData] = useState([]);
@@ -20,7 +17,6 @@ const Messages = () => {
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
-        <Navbar />
         <div className="listContainer">
           <div className="listTitle">Foydalanuvchilarning fikrlari</div>
           <div className="wrap">

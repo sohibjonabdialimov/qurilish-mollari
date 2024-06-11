@@ -22,25 +22,16 @@ const Header = () => {
           <div className="flex lg:flex-1">
             <Link to={"/"} className="-m-1.5 p-1.5 flex items-center gap-2">
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-10 w-auto"
+                src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1710/ylivdesign171008012/88020486-construction-materials-logo-gray-monochrome-illustration-of-construction-materials-vector-logo-for.jpg"
                 alt=""
               />
               <span className="text-slate-700 font-bold text-2xl">
-                Mebellar
+                Qurilish materiallari
               </span>
             </Link>
           </div>
           <div className="flex lg:hidden gap-4">
-            <div className="flex items-center gap-4">
-              <NavLink
-                to={"/order"}
-                className="block w-[30px] h-[30px] header_img"
-              >
-                <img className="object-cover" src={basket} alt="" />
-                <p>{myOrder?.length}</p>
-              </NavLink>
-            </div>
             <button
               onClick={() => openNavbarFunction()}
               type="button"
@@ -74,34 +65,14 @@ const Header = () => {
               to={"/category"}
               className="text-base font-mono leading-6 text-gray-900"
             >
-              Mebellar
+              Materiallar
             </NavLink>
             <NavLink
               to={"/design"}
               className="text-base font-mono leading-6 text-gray-900"
             >
-              Dizaynlar
+              Namunalar
             </NavLink>
-            <NavLink
-              to={"/installment"}
-              className="text-base font-mono leading-6 text-gray-900"
-            >
-              To'lov rejasi
-            </NavLink>
-            <NavLink
-              to={"/contact"}
-              className="text-base font-mono leading-6 text-gray-900"
-            >
-              Aloqa
-            </NavLink>
-            <NavLink to={"/order"} className="w-[30px] h-[30px] header_img">
-              <img className="object-cover" src={basket} alt="" />
-              <p>{myOrder?.length}</p>
-            </NavLink>
-            {/* <NavLink to={"/saved"} className="w-[30px] h-[30px] header_img">
-              <img className="object-cover" src={saved} alt="" />
-              <p>0</p>
-            </NavLink> */}
           </div>
           {}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -141,7 +112,7 @@ const Header = () => {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1710/ylivdesign171008012/88020486-construction-materials-logo-gray-monochrome-illustration-of-construction-materials-vector-logo-for.jpg"
                   alt=""
                 />
               </Link>
@@ -179,25 +150,13 @@ const Header = () => {
                     to={"/category"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Mebellar
+                    Materiallar
                   </NavLink>
                   <NavLink
                     to={"/design"}
                     className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Dizaynlar
-                  </NavLink>
-                  <NavLink
-                    to={"/installment"}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    To'lov rejasi
-                  </NavLink>
-                  <NavLink
-                    to={"/contact"}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Aloqa
+                    Namunalar
                   </NavLink>
                   <div className="lg:hidden flex lg:flex-1 lg:justify-end">
                     <NavLink

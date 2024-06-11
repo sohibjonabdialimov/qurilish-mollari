@@ -1,20 +1,17 @@
-import i1 from "../assets/i1.jpg";
-import i2 from "../assets/i2.jpg";
-import i3 from "../assets/i3.jpg";
-import i4 from "../assets/i4.jpg";
-import i5 from "../assets/i5.jpg";
-import i6 from "../assets/i6.jpg";
-import i7 from "../assets/i7.jpg";
-import i8 from "../assets/i8.jpg";
-import i9 from "../assets/i9.jpg";
-import i10 from "../assets/i10.jpg";
-import i11 from "../assets/i11.jpg";
-import i12 from "../assets/i12.jpg";
-import i13 from "../assets/i13.jpg";
-import i14 from "../assets/i14.jpg";
-import i15 from "../assets/i15.jpg";
-import i16 from "../assets/i16.jpg";
-import i17 from "../assets/i17.jpg";
+import t1 from "../assets/t1.jpg";
+import t2 from "../assets/t2.jpg";
+import t3 from "../assets/t3.jpg";
+import t4 from "../assets/t4.webp";
+import t5 from "../assets/t5.jpg";
+import t6 from "../assets/t6.jpg";
+import t7 from "../assets/t7.jpg";
+import t8 from "../assets/t8.webp";
+import t9 from "../assets/t9.avif";
+import t10 from "../assets/t10.jpg";
+import t11 from "../assets/t11.jpg";
+import t12 from "../assets/t12.jpg";
+import t13 from "../assets/t13.jpg";
+import t14 from "../assets/t14.jpg";
 import { useRef } from "react";
 
 const Design = () => {
@@ -32,16 +29,16 @@ const Design = () => {
   return (
     <div className="container">
       <div className="min-h-[90dvh] px-6 lg:px-24">
-        <h1 className="common_title">Uy uchun dizaynlar</h1>
+        <h1 className="common_title">Qurilish materiallar namunalari</h1>
 
         <div className="design_wrapper">
           <div className="d1">
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i1}
+              src={t1}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -55,9 +52,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i2}
+              src={t2}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -71,9 +68,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i3}
+              src={t3}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -87,9 +84,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i4}
+              src={t4}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -103,9 +100,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i5}
+              src={t5}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -119,9 +116,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i6}
+              src={t6}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -135,9 +132,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i7}
+              src={t7}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -151,9 +148,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i8}
+              src={t8}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -167,9 +164,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i9}
+              src={t9}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -183,9 +180,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i10}
+              src={t10}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -199,9 +196,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i11}
+              src={t11}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -215,9 +212,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i12}
+              src={t12}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -231,9 +228,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i13}
+              src={t13}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">
@@ -247,57 +244,9 @@ const Design = () => {
             <img
               onClick={(e) => onOpen(e)}
               className="w-[200px] h-[200px] myImg"
-              src={i14}
+              src={t14}
               id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
-            />
-            <div ref={modal} id="myModal" className="modal">
-              <span onClick={() => closeFunc()} className="close">
-                &times;
-              </span>
-              <img ref={modalImg} className="modal-content" id="img01" />
-              <div ref={captionText} id="caption"></div>
-            </div>
-          </div>
-          <div className="d15">
-            <img
-              onClick={(e) => onOpen(e)}
-              className="w-[200px] h-[200px] myImg"
-              src={i15}
-              id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
-            />
-            <div ref={modal} id="myModal" className="modal">
-              <span onClick={() => closeFunc()} className="close">
-                &times;
-              </span>
-              <img ref={modalImg} className="modal-content" id="img01" />
-              <div ref={captionText} id="caption"></div>
-            </div>
-          </div>
-          <div className="d16">
-            <img
-              onClick={(e) => onOpen(e)}
-              className="w-[200px] h-[200px] myImg"
-              src={i16}
-              id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
-            />
-            <div ref={modal} id="myModal" className="modal">
-              <span onClick={() => closeFunc()} className="close">
-                &times;
-              </span>
-              <img ref={modalImg} className="modal-content" id="img01" />
-              <div ref={captionText} id="caption"></div>
-            </div>
-          </div>
-          <div className="d17 sm:block hidden">
-            <img
-              onClick={(e) => onOpen(e)}
-              className="w-[200px] h-[200px] myImg"
-              src={i17}
-              id="myImg"
-              alt="Uyingiz uchun dizayn tanlang"
+              alt="Qurilish materiallari to'plami"
             />
             <div ref={modal} id="myModal" className="modal">
               <span onClick={() => closeFunc()} className="close">

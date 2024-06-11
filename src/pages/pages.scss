@@ -1,0 +1,134 @@
+div.card1 {
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(black, 0.45);
+  transition: 0.33s ease all;
+
+  div.card-img-container {
+    overflow: hidden;
+    position: relative;
+    background-color: #262626;
+  }
+
+  div.card-img {
+    transition: 0.45s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-size: 150%;
+    height: 460px;
+    color: white;
+    img {
+      width: 100%;
+      transition: 0.3s;
+      height: 100%;
+    }
+    span {
+      -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      padding-top: 15px;
+      padding-left: 5px;
+      position: relative;
+    }
+    p{
+      color: rgb(250, 178, 58);
+      font-size: 0.85em;
+    }
+
+    h1 {
+      -webkit-font-smoothing: antialiased;
+      font-family: "bodoni-urw";
+      font-weight: normal;
+      font-size: 25px;
+      margin: 0;
+      padding-bottom: 15px;
+      padding-left: 5px;
+      position: relative;
+    }
+  }
+
+  div.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+
+    p {
+      color: #262626;
+      margin: 0 0 20px 0;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    p > b {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    div.card-link {
+      a {
+        -webkit-font-smoothing: antialiased;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #2d58c4;
+        font-weight: bold;
+        font-size: 12px;
+      }
+
+      a:hover {
+        color: darken(#2d58c4, 20%);
+      }
+    }
+  }
+}
+
+.card-img-container:hover .card-img img {
+  transform: scale(1.08);
+}
+
+.card {
+  transition: 0.3s;
+  background-color: rgba(0,0,0,0.85);
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+}
+.card:hover {
+    box-shadow: 0 16px 36px 0 rgba(0,0,0,0.7);
+   transform: translate(0,-5px);
+}
+.card img{
+  height: 300px;
+}
+.container {
+  padding: 10px 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.card_wrapper p{
+  color: rgb(250, 178, 58);
+  font-size: 0.85em;
+}
+.card_wrapper h2{
+  font-size: 20px;
+}
+h2 {
+  margin: 0;
+  margin-top: 2px;
+}
+.author{
+  text-decoration: none;
+  color: rgb(90, 183, 243);
+}
+p {
+  margin-top: 7px;
+}
+.author:hover {
+  text-decoration: underline;
+}
+

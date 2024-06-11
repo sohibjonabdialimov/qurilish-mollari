@@ -9,9 +9,15 @@ const Datatable = () => {
   const [data, setData] = useState([]);
 
   function fetchProducts() {
-    axiosT.get("/allAdmins").then((response) => {
-      setData(response.data);
-    });
+    axiosT
+      .get("/getAdmins")
+      .then((response) => {
+        console.log(response);
+        setData(response.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
   useEffect(() => {
     fetchProducts();
@@ -35,12 +41,9 @@ const Datatable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/admin/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
-            </Link>
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row.uuid)}
+              onClick={() => handleDelete(params.row.id)}
             >
               Delete
             </div>
@@ -52,19 +55,17 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Add New User
+        Adminlar ro'yxati
         <Link to="/admin/users/add" className="link">
-          Add New Users
+          Admin qo'shish
         </Link>
       </div>
       <DataGrid
         className="datagrid"
         rows={data}
-        getRowId={(row) => row.uuid}
         columns={userColumns?.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[9]}
-        // checkboxSelection
       />
     </div>
   );

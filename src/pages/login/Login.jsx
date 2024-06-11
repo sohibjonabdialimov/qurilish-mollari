@@ -98,7 +98,7 @@ const Login = () => {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center rounded-md bg-custom_color px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-custom_color_hover"
               >
                 Kirish
               </button>
@@ -107,9 +107,9 @@ const Login = () => {
           <p className="mt-10 text-center text-sm text-gray-500">
             <Link
               to={"/"}
-              className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 border px-5 py-3 rounded"
+              className="font-semibold leading-6 text-custom_color hover:text-custom_color_hover border px-5 py-3 rounded"
             >
-              Bosh sahifaga o'tish
+              Asosiy sahifa
             </Link>
           </p>
         </div>

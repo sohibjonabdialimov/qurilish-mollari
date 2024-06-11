@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
 import Sidebar from "../components/sidebar/Sidebar";
-import Navbar from "../components/navbar/Navbar";
 import { axiosT } from "../services/api/axios";
 const AdminOrder = () => {
   const [data, setData] = useState([]);
@@ -19,19 +16,26 @@ const AdminOrder = () => {
   return (
     <div className="home">
       <Sidebar />
-      <div className="homeContainer">
-        <Navbar />
+      <div className="homeContainer bg-slate-100">
         <div className="listContainer">
           <div className="listTitle">Barcha buyurtmalar</div>
           <div className="wrap">
             {data.map((item, index) => {
               return (
                 <div key={item.uuid} className="wrap_item">
-                  <div className="index"><b>{index + 1}.</b></div>
+                  <div className="index">
+                    <b>{index + 1}.</b>
+                  </div>
                   <div className="info">
-                    <h2><b>Ism:</b> {item.fullName}</h2>
-                    <p><b>Email:</b> {item.email}</p>
-                    <p><b>Xabar:</b> {item.commets}</p>
+                    <h2>
+                      <b>Ism:</b> {item.fullName}
+                    </h2>
+                    <p>
+                      <b>Email:</b> {item.email}
+                    </p>
+                    <p>
+                      <b>Xabar:</b> {item.commets}
+                    </p>
                   </div>
                 </div>
               );

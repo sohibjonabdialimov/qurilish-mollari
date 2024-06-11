@@ -73,7 +73,7 @@ const AdminRegisterPage = () => {
                     <>
                       <Input
                         {...field}
-                        placeholder="Xudoyberdiyev Eldor"
+                        placeholder="Alisher Qodirov"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>
@@ -115,7 +115,7 @@ const AdminRegisterPage = () => {
                       <Input
                         {...field}
                         type="email"
-                        placeholder="xudoyberdiyeveldor@gmail.com"
+                        placeholder="kimdur@gmail.com"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>
@@ -166,7 +166,7 @@ const AdminRegisterPage = () => {
             </Form.Item>
             <button
               type="submit"
-              className="w-full py-[0.4rem] rounded-lg font-semibold bg-custom_blue text-white cursor-pointer transition-opacity hover:opacity-85"
+              className="flex w-full justify-center rounded-md bg-custom_color px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-custom_color_hover"
             >
               Ro'yxatdan o'tish
             </button> 

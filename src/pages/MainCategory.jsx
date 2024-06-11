@@ -10,7 +10,7 @@ import m8 from "../assets/main8.webp";
 import m9 from "../assets/main9.webp";
 import { useNavigate } from "react-router-dom";
 import { axiosT } from "../services/api/axios";
-import { formatImage } from "../utils/formatImage";
+import "./pages.scss";
 // const data = [
 //   {
 //     id: 1,
@@ -92,7 +92,7 @@ const MainCategory = () => {
   return (
     <div className="container">
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
-        <h1 className="common_title">Kategoriyalar</h1>
+        <h1 className="common_title">Qurilish materiallari kategoriyalari</h1>
 
         <div className="relative category">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:pb-28 pb-10">
@@ -100,20 +100,27 @@ const MainCategory = () => {
               return (
                 <div
                   onClick={() => {
-                    navigate(`/category/${item.uuid}`);
+                    navigate(`/category/${item.id}`);
                   }}
-                  key={item.uuid}
-                  className="w-full relative mx-auto h-auto overflow-hidden rounded-lg category_item cursor-pointer"
+                  key={item.id}
+                  className="card cursor-pointer"
                 >
-                  <img
-                    // src={item.categoryImage}
-                    src={formatImage(item.categoryImage)}
-                    alt="image"
-                    className="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110"
-                  />
-                  <div className="category_item_desc">
-                    <p>{item.productCount} ta mahsulot</p>
-                    <h2>{item.categoryName}</h2>
+                  <div className="card_wrapper">
+                    <img
+                      src={item.categoryImage}
+                      alt="mountains"
+                    />
+                    <div className="container p-3">
+                      <p className="text-sm" href="#">
+                        Qurilish materiallari kategoriyalari
+                      </p>
+                      <h2 className="text-lg">
+                        {item.categoryName}
+                      </h2>
+                      <p>
+                         Kategoriyadagi mahsulotlar soni: {item.productCount}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );

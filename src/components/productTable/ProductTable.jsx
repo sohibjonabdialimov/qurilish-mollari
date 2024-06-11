@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { axiosT } from "../../services/api/axios";
 import { ToastContainer, toast } from "react-toastify";
+
 const ProductTable = () => {
   const [data, setData] = useState([]);
 
   function fetchProducts() {
-    axiosT.get("/admin/getAllProducts").then((response) => {
-      setData(response.data.allCategory);
+    axiosT.get("/user/getAllProducts").then((response) => {
+      console.log(response.data.allProducts);
+      setData(response.data.allProducts);
     });
   }
   useEffect(() => {
@@ -35,12 +37,9 @@ const ProductTable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/admin/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
-            </Link>
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row.uuid)}
+              onClick={() => handleDelete(params.row.id)}
             >
               Delete
             </div>
@@ -64,19 +63,17 @@ const ProductTable = () => {
         theme="light"
       />
       <div className="datatableTitle">
-        Add New Product
+        Qurilish mollarini ro'yxati
         <Link to="/admin/products/new" className="link">
-          Add New Product
+          Qo'shish
         </Link>
       </div>
       <DataGrid
         className="datagrid"
         rows={data}
-        getRowId={(row) => row.uuid}
         columns={Product?.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[9]}
-        // checkboxSelection
       />
     </div>
   );

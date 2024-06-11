@@ -1,6 +1,5 @@
 import "./new.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useRef, useState } from "react";
 import { axiosT } from "../../services/api/axios";
@@ -53,7 +52,6 @@ const NewCategory = ({ title }) => {
       />
       <Sidebar />
       <div className="newContainer">
-        <Navbar />
         <div className="top">
           <h1 className="pt-5 pl-5">{title}</h1>
         </div>
@@ -73,7 +71,7 @@ const NewCategory = ({ title }) => {
                     />
                   </div>
                   <label htmlFor="file">
-                    Rasm: <DriveFolderUploadOutlinedIcon className="icon" />
+                    Qurilish kategoriyasi rasmi <DriveFolderUploadOutlinedIcon className="icon" />
                   </label>
                   <input
                     type="file"
@@ -88,11 +86,11 @@ const NewCategory = ({ title }) => {
                 <label>Kategoriya nomi</label>
                 <input
                   type="text"
-                  placeholder="Yumshoq mebellar"
+                  placeholder="Sement mahsulotlari"
                   ref={nameRef}
                 />
               </div>
-              <button type="submit">Kategoriya yaratish</button>
+              <button type="submit">Yaratish</button>
             </form>
           </div>
         </div>

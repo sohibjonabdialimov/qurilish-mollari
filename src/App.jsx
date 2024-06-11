@@ -1,4 +1,3 @@
-import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
 import ProductList from "./pages/productList/ProductList";
@@ -62,7 +61,7 @@ function App() {
                 index
                 element={
                   <RequireAuth>
-                    <Home />
+                    <List />
                   </RequireAuth>
                 }
               />

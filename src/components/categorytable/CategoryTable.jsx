@@ -37,9 +37,6 @@ const CategoryTable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/admin/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
-            </Link>
             <div
               className="deleteButton"
               onClick={() => handleDelete(params.row.uuid)}
@@ -66,19 +63,17 @@ const CategoryTable = () => {
         theme="light"
       />
       <div className="datatableTitle">
-        Yangi kategoriya qo'shish
+       Qurilish kategoriyalari
         <Link to="/admin/categories/new" className="link">
-          Yangi kategoriya qo'shish
+          Kategoriya qo'shish
         </Link>
       </div>
       <DataGrid
         className="datagrid"
         rows={data}
-        getRowId={(row) =>  row.uuid}
         columns={Category?.concat(actionColumn)}
         pageSize={10}
         rowsPerPageOptions={[9]}
-        // checkboxSelection
       />
     </div>
   );
