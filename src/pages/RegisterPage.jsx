@@ -53,7 +53,7 @@ const RegisterPage = () => {
         theme="light"
       />
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
-        <h1 className="common_title">Ro'yxatdan o'tish</h1>
+        <h1 className="common_title mb-5">Ro'yxatdan o'tish</h1>
         <Form
           layout="vertical"
           className="mb-10 sm:w-[400px] w-[100%] mx-auto"
@@ -75,7 +75,7 @@ const RegisterPage = () => {
                     <>
                       <Input
                         {...field}
-                        placeholder="Xudoyberdiyev Eldor"
+                        placeholder="Alisher Qodirov"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>
@@ -117,7 +117,7 @@ const RegisterPage = () => {
                       <Input
                         {...field}
                         type="email"
-                        placeholder="xudoyberdiyeveldor@gmail.com"
+                        placeholder="kimdur@gmail.com"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>
@@ -139,26 +139,6 @@ const RegisterPage = () => {
                         {...field}
                         type="password"
                         placeholder="********"
-                        className="w-full p-3 rounded-[10px]"
-                      />
-                    </>
-                  );
-                }}
-              />
-            </Form.Item>
-            <Form.Item className="font-semibold" label="To'liq manzil">
-              <Controller
-                rules={{
-                  required: "Field is required",
-                }}
-                control={control}
-                name="REGISTER.address"
-                render={({ field }) => {
-                  return (
-                    <>
-                      <TextArea
-                        {...field}
-                        placeholder="Toshkent shahar, Yunusobod tumani, Amir Temur ko'chasi, 102-uy"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>

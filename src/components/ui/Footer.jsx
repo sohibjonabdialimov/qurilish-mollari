@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-6 justify-between sm:grid-cols-2 w-100 sm:gap-y-10 lg:grid-cols-12">
             <div className="sm:col-span-4 flex gap-3 items-center">
               <img className="w-[40px] h-[40px] rounded-full" src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1710/ylivdesign171008012/88020486-construction-materials-logo-gray-monochrome-illustration-of-construction-materials-vector-logo-for.jpg" alt="" />
-              <p className="text-white">Qurilish materiallari</p>
+              <p className="text-white">Behruz buildings</p>
             </div>
 
             <div className="sm:col-span-2">
@@ -155,9 +155,9 @@ const Footer = () => {
           <div className="col-span-full lg:col-span-2">
             <div className="flex items-center">
               <img src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1710/ylivdesign171008012/88020486-construction-materials-logo-gray-monochrome-illustration-of-construction-materials-vector-logo-for.jpg" alt="" className="h-10 me-5 rounded" />
-              <p>Qurilish materiallari</p>
+              <p>Behruz buildings</p>
             </div>
-            <p className="text-white mt-6">O'zbekiston qurilish materiallari sanoati korxonalari uyushmasi qurilish materiallarining barcha turlarini: sement, ohak, gips, devorbop, tom yopgich, suv o'tkazmaydigan va issiqlikni saqlovchi materiallarni - 100 hildan ortiq asosiy qurilish mahsulotlaridan to'liq foydalanishni ta'minlaydi.</p>
+            <p className="text-white mt-6">Behruz buildings onlayn do'koni qurilish materiallarining barcha turlarini: sement, ohak, gips, devorbop, tom yopgich, suv o'tkazmaydigan va issiqlikni saqlovchi materiallarni - 100 hildan ortiq asosiy qurilish mahsulotlaridan to'liq foydalanishni ta'minlaydi.</p>
           </div>
           <div className="col-span-1">
             <h4 className="font-semibold text-gray-100 uppercase">Muhim linklar</h4>
@@ -173,7 +173,7 @@ const Footer = () => {
             <div className="mt-6 grid space-y-3">
               <p><Link to={"register"} className="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Ro'yxatdan o'tish</Link></p>
               <p><Link to={"/login"} className="inline-flex gap-x-2 text-white hover:text-gray-200" href="#">Kirish</Link></p>
-              <p className="text-white hover:text-gray-200">BOG'LANISH UCHUN: +998976505050</p>
+              <p className="text-white hover:text-gray-200">BOG'LANISH UCHUN: +998(91)451-95-73</p>
             </div>
           </div>
           <div className="col-span-1">

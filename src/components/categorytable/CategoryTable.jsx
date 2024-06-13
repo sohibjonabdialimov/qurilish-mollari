@@ -39,7 +39,7 @@ const CategoryTable = () => {
           <div className="cellAction">
             <div
               className="deleteButton"
-              onClick={() => handleDelete(params.row.uuid)}
+              onClick={() => handleDelete(params.row.id)}
             >
               Delete
             </div>

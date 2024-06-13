@@ -3,7 +3,7 @@ export const userColumns = [
   {
     field: "fullName",
     headerName: "Full Name",
-    width: 250,
+    width: 200,
   },
   {
     field: "email",

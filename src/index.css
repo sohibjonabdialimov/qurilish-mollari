@@ -894,9 +894,7 @@ a.active {
   text-decoration: line-through;
 }
 /* caegory page */
-.category img{
-  filter: brightness(75%);
-}
+
 .category_item_desc{
   position: absolute;
   bottom: 10px;

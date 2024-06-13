@@ -25,7 +25,7 @@ const New = ({ title }) => {
 
     formData.append("name", nameRef.current.value);
     formData.append("price", currentRef.current.value);
-    formData.append("description", descRef.current.value);
+    formData.append("description", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
     formData.append("star", starRef.current.value);
     formData.append("img", imgRef.current.files[0]);
     formData.append("category_id", idRef.current.value);

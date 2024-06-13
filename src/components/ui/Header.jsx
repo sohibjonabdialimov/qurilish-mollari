@@ -1,11 +1,8 @@
-import React, { useContext, useRef } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import basket from "../../assets/basket.png";
-import { myOrderContext } from "../../services/providers/orderContext";
+import React, { useRef } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const hidden = useRef();
-  const { myOrder, setMyOrder } = useContext(myOrderContext);
   function openNavbarFunction() {
     hidden.current?.classList.remove("hidden");
   }
@@ -14,7 +11,7 @@ const Header = () => {
   }
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white shadow-md">
+      <header className="sticky top-0 z-50 shadow-md bg-slate-200">
         <nav
           className="flex items-center justify-between p-6 lg:px-20"
           aria-label="Global"
@@ -22,12 +19,12 @@ const Header = () => {
           <div className="flex lg:flex-1">
             <Link to={"/"} className="-m-1.5 p-1.5 flex items-center gap-2">
               <img
-                className="h-10 w-auto"
+                className="h-10 w-auto rounded-md"
                 src="https://us.123rf.com/450wm/ylivdesign/ylivdesign1710/ylivdesign171008012/88020486-construction-materials-logo-gray-monochrome-illustration-of-construction-materials-vector-logo-for.jpg"
                 alt=""
               />
               <span className="text-slate-700 font-bold text-2xl">
-                Qurilish materiallari
+                Behruz buildings
               </span>
             </Link>
           </div>

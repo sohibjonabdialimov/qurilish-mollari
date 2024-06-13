@@ -6,20 +6,15 @@ import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { productInputs } from "./formSource";
 import { useContext } from "react";
-import { DarkModeContext } from "./context/darkModeContext";
 import UsersLayout from "./layouts/UserLayout";
 import Dashboard from "./pages/Dashboard";
 import Furniture from "./pages/Furniture";
 import Design from "./pages/Design";
 import Messages from "./pages/Messages";
-import Installment from "./pages/installment/Installment";
 import Feedback from "./pages/Feedback";
 import Contact from "./pages/contact/Contact";
-import Order from "./pages/Order";
-import Saved from "./pages/Saved";
 import "./App.css";
 import "./style/dark.scss";
-import OneFurniture from "./pages/oneFurniture/OneFurniture";
 import MainCategory from "./pages/MainCategory";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -30,15 +25,13 @@ import { authContext } from "./services/providers/authContext";
 import AdminOrder from "./pages/AdminOrder";
 
 function App() {
-  const { darkMode } = useContext(DarkModeContext);
   const { auth } = useContext(authContext);
   const RequireAuth = ({ children }) => {
     return auth ? children : <Navigate to="/admin/login" />;
   };
-  console.log(import.meta.env.VITE_FIREBASE_KEY);
   return (
     <>
-      <div className={darkMode ? "app dark" : "app"}>
+      <div className="bg-slate-200 text-black">
         <BrowserRouter>
           <Routes>
             <Route path="register" element={<RegisterPage />} />
@@ -46,14 +39,10 @@ function App() {
             <Route path="/" element={<UsersLayout />}>
               <Route index element={<Dashboard />} />
               <Route path="design" element={<Design />} />
-              <Route path="order" element={<Order />} />
-              <Route path="saved" element={<Saved />} />
-              <Route path="furnitures/:id" element={<OneFurniture />} />
               <Route path="contact" element={<Contact />} />
               <Route path="feedback" element={<Feedback />} />
               <Route path="category" element={<MainCategory />} />
               <Route path="category/:id" element={<Furniture />} />
-              <Route path="installment" element={<Installment />} />
             </Route>
             <Route path="/admin">
               <Route path="login" element={<Login />} />

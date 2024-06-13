@@ -1,7 +1,7 @@
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Form, Input } from "antd";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { axiosT } from "../services/api/axios";
 import { ToastContainer, toast } from "react-toastify";
 const { TextArea } = Input;
@@ -51,7 +51,7 @@ const AdminRegisterPage = () => {
         theme="light"
       />
       <div className="min-h-[90dvh] px-6 lg:px-32 mx-auto">
-        <h1 className="common_title">Ro'yxatdan o'tish</h1>
+        <h1 className="common_title mb-4">Ro'yxatdan o'tish</h1>
         <Form
           layout="vertical"
           className="mb-10 sm:w-[400px] w-[100%] mx-auto"
@@ -137,26 +137,6 @@ const AdminRegisterPage = () => {
                         {...field}
                         type="password"
                         placeholder="********"
-                        className="w-full p-3 rounded-[10px]"
-                      />
-                    </>
-                  );
-                }}
-              />
-            </Form.Item>
-            <Form.Item className="font-semibold" label="To'liq manzil">
-              <Controller
-                rules={{
-                  required: "Field is required",
-                }}
-                control={control}
-                name="REGISTER.address"
-                render={({ field }) => {
-                  return (
-                    <>
-                      <TextArea
-                        {...field}
-                        placeholder="Toshkent shahar, Yunusobod tumani, Amir Temur ko'chasi, 102-uy"
                         className="w-full p-3 rounded-[10px]"
                       />
                     </>
